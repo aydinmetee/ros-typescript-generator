@@ -1,0 +1,614 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ros-typescript-generator</title>
+	<meta name="description" content="Documentation for ros-typescript-generator">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">ros-typescript-generator</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>ros-typescript-generator</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias"><a href="globals.html#iconfig" class="tsd-kind-icon">IConfig</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#iconfigdirectory" class="tsd-kind-icon">IConfig<wbr>Directory</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable"><a href="globals.html#supported_ros_versions" class="tsd-kind-icon">SUPPORTED_<wbr>ROS_<wbr>VERSIONS</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="globals.html#generatefromrosmsg" class="tsd-kind-icon">generate<wbr>From<wbr>Ros<wbr>Msg</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#getmsgfiles" class="tsd-kind-icon">get<wbr>Msg<wbr>Files</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#getmsgfilesdata" class="tsd-kind-icon">get<wbr>Msg<wbr>Files<wbr>Data</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#rosnametotypename" class="tsd-kind-icon">ros<wbr>Name<wbr>ToType<wbr>Name</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#rostypescriptgenerator" class="tsd-kind-icon">ros<wbr>Typescript<wbr>Generator</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal"><a href="globals.html#common" class="tsd-kind-icon">common</a></li>
+								<li class="tsd-kind-object-literal"><a href="globals.html#primitives1" class="tsd-kind-icon">primitives1</a></li>
+								<li class="tsd-kind-object-literal"><a href="globals.html#primitives2" class="tsd-kind-icon">primitives2</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="iconfig" class="tsd-anchor"></a>
+					<h3>IConfig</h3>
+					<div class="tsd-signature tsd-kind-icon">IConfig<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><a href="globals.html#iconfigdirectory" class="tsd-signature-type">IConfigDirectory</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>output<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>rosVersion<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span><span class="tsd-signature-symbol">; </span>typePrefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/types/config.ts#L6">types/config.ts:6</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><a href="globals.html#iconfigdirectory" class="tsd-signature-type">IConfigDirectory</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> output<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> ros<wbr>Version<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> type<wbr>Prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="iconfigdirectory" class="tsd-anchor"></a>
+					<h3>IConfig<wbr>Directory</h3>
+					<div class="tsd-signature tsd-kind-icon">IConfig<wbr>Directory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>namespace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/types/config.ts#L1">types/config.ts:1</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> namespace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="supported_ros_versions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> SUPPORTED_<wbr>ROS_<wbr>VERSIONS</h3>
+					<div class="tsd-signature tsd-kind-icon">SUPPORTED_<wbr>ROS_<wbr>VERSIONS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [1, 2]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/generateFromRosMsg.ts#L8">lib/generateFromRosMsg.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="generatefromrosmsg" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> generate<wbr>From<wbr>Ros<wbr>Msg</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>From<wbr>Ros<wbr>Msg<span class="tsd-signature-symbol">(</span>rosDefinition<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, typePrefix<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, rosVersion<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">IConfig</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">"rosVersion"</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/generateFromRosMsg.ts#L14">lib/generateFromRosMsg.ts:14</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Take in a ros definition string and generates a typescript interface</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rosDefinition: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> typePrefix: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> rosVersion: <span class="tsd-signature-type">IConfig</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">"rosVersion"</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> = 2</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getmsgfiles" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Msg<wbr>Files</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Msg<wbr>Files<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/readMsgFiles.ts#L7">lib/readMsgFiles.ts:7</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dir: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getmsgfilesdata" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Msg<wbr>Files<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Msg<wbr>Files<wbr>Data<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, namespace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>namespace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/readMsgFiles.ts#L20">lib/readMsgFiles.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dir: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>namespace: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>namespace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="rosnametotypename" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ros<wbr>Name<wbr>ToType<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">ros<wbr>Name<wbr>ToType<wbr>Name<span class="tsd-signature-symbol">(</span>rosName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, prefix<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/generateFromRosMsg.ts#L10">lib/generateFromRosMsg.ts:10</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rosName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> prefix: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="rostypescriptgenerator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ros<wbr>Typescript<wbr>Generator</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">ros<wbr>Typescript<wbr>Generator<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="globals.html#iconfig" class="tsd-signature-type">IConfig</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/rosTypescriptGenerator.ts#L10">lib/rosTypescriptGenerator.ts:10</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <a href="globals.html#iconfig" class="tsd-signature-type">IConfig</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal">
+					<a name="common" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> common</h3>
+					<div class="tsd-signature tsd-kind-icon">common<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L4">lib/primitives.ts:4</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Common types between ROS 1 &amp; 2</p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.bool" class="tsd-anchor"></a>
+						<h3>bool</h3>
+						<div class="tsd-signature tsd-kind-icon">bool<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;boolean&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L5">lib/primitives.ts:5</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.byte" class="tsd-anchor"></a>
+						<h3>byte</h3>
+						<div class="tsd-signature tsd-kind-icon">byte<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Int8Array&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L6">lib/primitives.ts:6</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.char" class="tsd-anchor"></a>
+						<h3>char</h3>
+						<div class="tsd-signature tsd-kind-icon">char<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;string&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L7">lib/primitives.ts:7</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.float32" class="tsd-anchor"></a>
+						<h3>float32</h3>
+						<div class="tsd-signature tsd-kind-icon">float32<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;number&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L8">lib/primitives.ts:8</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.float64" class="tsd-anchor"></a>
+						<h3>float64</h3>
+						<div class="tsd-signature tsd-kind-icon">float64<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;number&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L9">lib/primitives.ts:9</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.int16" class="tsd-anchor"></a>
+						<h3>int16</h3>
+						<div class="tsd-signature tsd-kind-icon">int16<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;number&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L12">lib/primitives.ts:12</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.int32" class="tsd-anchor"></a>
+						<h3>int32</h3>
+						<div class="tsd-signature tsd-kind-icon">int32<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;number&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L14">lib/primitives.ts:14</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.int64" class="tsd-anchor"></a>
+						<h3>int64</h3>
+						<div class="tsd-signature tsd-kind-icon">int64<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;number&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L16">lib/primitives.ts:16</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.int8" class="tsd-anchor"></a>
+						<h3>int8</h3>
+						<div class="tsd-signature tsd-kind-icon">int8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;number&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L10">lib/primitives.ts:10</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.string" class="tsd-anchor"></a>
+						<h3>string</h3>
+						<div class="tsd-signature tsd-kind-icon">string<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;string&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L18">lib/primitives.ts:18</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.uint16" class="tsd-anchor"></a>
+						<h3>uint16</h3>
+						<div class="tsd-signature tsd-kind-icon">uint16<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;number&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L13">lib/primitives.ts:13</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.uint32" class="tsd-anchor"></a>
+						<h3>uint32</h3>
+						<div class="tsd-signature tsd-kind-icon">uint32<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;number&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L15">lib/primitives.ts:15</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.uint64" class="tsd-anchor"></a>
+						<h3>uint64</h3>
+						<div class="tsd-signature tsd-kind-icon">uint64<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;number&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L17">lib/primitives.ts:17</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.uint8" class="tsd-anchor"></a>
+						<h3>uint8</h3>
+						<div class="tsd-signature tsd-kind-icon">uint8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;number&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L11">lib/primitives.ts:11</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.wchar" class="tsd-anchor"></a>
+						<h3>wchar</h3>
+						<div class="tsd-signature tsd-kind-icon">wchar<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;string&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L20">lib/primitives.ts:20</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="common.wstring" class="tsd-anchor"></a>
+						<h3>wstring</h3>
+						<div class="tsd-signature tsd-kind-icon">wstring<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;string&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L19">lib/primitives.ts:19</a></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal">
+					<a name="primitives1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> primitives1</h3>
+					<div class="tsd-signature tsd-kind-icon">primitives1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L26">lib/primitives.ts:26</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>ROS 1</p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="primitives1.duration" class="tsd-anchor"></a>
+						<h3>duration</h3>
+						<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;{ secs: number, nsecs: number }&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L28">lib/primitives.ts:28</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="primitives1.time" class="tsd-anchor"></a>
+						<h3>time</h3>
+						<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;{ secs: number, nsecs: number }&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L29">lib/primitives.ts:29</a></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal">
+					<a name="primitives2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> primitives2</h3>
+					<div class="tsd-signature tsd-kind-icon">primitives2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L36">lib/primitives.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Map all ROS 2 primitives to a ts type
+							<a href="https://design.ros2.org/articles/interface_definition.html">https://design.ros2.org/articles/interface_definition.html</a></p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="primitives2.duration" class="tsd-anchor"></a>
+						<h3>duration</h3>
+						<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;{ sec: number, nanosec: number }&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L38">lib/primitives.ts:38</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="primitives2.time" class="tsd-anchor"></a>
+						<h3>time</h3>
+						<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;{ sec: number, nanosec: number }&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/aydinmetee/ros-typescript-generator/blob/e8d0406/src/lib/primitives.ts#L39">lib/primitives.ts:39</a></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals current ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#iconfig" class="tsd-kind-icon">IConfig</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#iconfigdirectory" class="tsd-kind-icon">IConfig<wbr>Directory</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#supported_ros_versions" class="tsd-kind-icon">SUPPORTED_<wbr>ROS_<wbr>VERSIONS</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#generatefromrosmsg" class="tsd-kind-icon">generate<wbr>From<wbr>Ros<wbr>Msg</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getmsgfiles" class="tsd-kind-icon">get<wbr>Msg<wbr>Files</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getmsgfilesdata" class="tsd-kind-icon">get<wbr>Msg<wbr>Files<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rosnametotypename" class="tsd-kind-icon">ros<wbr>Name<wbr>ToType<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rostypescriptgenerator" class="tsd-kind-icon">ros<wbr>Typescript<wbr>Generator</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#common" class="tsd-kind-icon">common</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#primitives1" class="tsd-kind-icon">primitives1</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#primitives2" class="tsd-kind-icon">primitives2</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

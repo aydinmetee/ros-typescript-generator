@@ -1,0 +1,216 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ros-typescript-generator</title>
+	<meta name="description" content="Documentation for ros-typescript-generator">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">ros-typescript-generator</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>ros-typescript-generator</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#ros-typescript-generator" id="ros-typescript-generator" style="color: inherit; text-decoration: none;">
+					<h1>Ros Typescript Generator</h1>
+				</a>
+				<p><a href="https://circleci.com/gh/Greenroom-Robotics/ros-typescript-generator/tree/master"><img src="https://circleci.com/gh/Greenroom-Robotics/ros-typescript-generator/tree/master.svg?style=svg" alt="CircleCI"></a></p>
+				<p>A CLI for generating typescript interfaces and enums from ros <code>msg</code> files. </p>
+				<a href="#features" id="features" style="color: inherit; text-decoration: none;">
+					<h3>Features</h3>
+				</a>
+				<ul>
+					<li><input checked="" disabled="" type="checkbox"> ROS1 and ROS2 support</li>
+					<li><input checked="" disabled="" type="checkbox"> Generate ts types from ROS <code>msgs</code></li>
+					<li><input checked="" disabled="" type="checkbox"> Generate ts enums from ROS <code>msgs</code></li>
+					<li><input checked="" disabled="" type="checkbox"> Configurable type prefix, eg) <code>IRosType</code> or <code>Ros</code></li>
+					<li><input checked="" disabled="" type="checkbox"> Works with custom <code>msgs</code></li>
+					<li><input checked="" disabled="" type="checkbox"> No runtime dependencies</li>
+					<li><input disabled="" type="checkbox"> Advanced multi-enum support<pre><code class="language-msg"># example_msgs/example.msg
+uint8 STATUS_DISABLED = 0 
+uint8 STATUS_ENABLED = 1
+</code></pre>
+					</li>
+				</ul>
+				<p>uint8 OTHER_THING_1 = 1
+				uint8 OTHER_THING_2 = 2</p>
+				<p>uint8 status
+					uint8 other
+				uint8 more</p>
+				<pre><code>
+Should become:
+```ts
+export enum <span class="hljs-keyword">IRosTypeExampleStatus</span> {
+  <span class="hljs-string">&quot;STATUS_DISABLED&quot;</span> = <span class="hljs-number">0</span>,
+  <span class="hljs-string">&quot;STATUS_ENABLED&quot;</span> = <span class="hljs-number">1</span>,
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">enum</span> <span class="hljs-keyword">IRosTypeExampleOther</span> {
+  <span class="hljs-string">&quot;OTHER_THING_1&quot;</span> = <span class="hljs-number">1</span>,
+  <span class="hljs-string">&quot;OTHER_THING_2&quot;</span> = <span class="hljs-number">2</span>
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-keyword">IRosTypeExampleOther</span> {
+  <span class="hljs-literal">status</span>: IRosTypeExampleStatus
+  other: IRosTypeExampleOther
+  more: number
+}
+</code></pre>
+				<a href="#comparison-to-rclnodejs--rostsd-gen" id="comparison-to-rclnodejs--rostsd-gen" style="color: inherit; text-decoration: none;">
+					<h3>Comparison to rclnodejs / rostsd-gen</h3>
+				</a>
+				<p>Unlike <a href="https://github.com/RobotWebTools/rclnodejs/tree/develop/rostsd_gen">rostsd-gen</a>, this <strong>ONLY</strong> generates ts types and enums. This means the output does not include any nodejs dependencies. In fact, it has no runtime dependencies at all. It uses interfaces rather than classes 🙂. This makes it good option for any frontend project.</p>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h3>Usage</h3>
+				</a>
+				<ul>
+					<li>Add a <code>ros-ts-generator-config.json</code> file to your project root. For example:</li>
+				</ul>
+				<pre><code class="language-json">{
+  <span class="hljs-attr">&quot;output&quot;</span>: <span class="hljs-string">&quot;./generated/ros_msgs.ts&quot;</span>,
+  <span class="hljs-attr">&quot;rosVersion&quot;</span>: <span class="hljs-number">2</span>, <span class="hljs-comment">// 1 or 2</span>
+  <span class="hljs-attr">&quot;input&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;namespace&quot;</span>: <span class="hljs-string">&quot;std_msgs&quot;</span>,
+      <span class="hljs-attr">&quot;path&quot;</span>: <span class="hljs-string">&quot;/opt/ros/galactic/share/std_msgs&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;namespace&quot;</span>: <span class="hljs-string">&quot;geometry_msgs&quot;</span>,
+      <span class="hljs-attr">&quot;path&quot;</span>: <span class="hljs-string">&quot;/opt/ros/galactic/share/geometry_msgs&quot;</span>
+    },
+    <span class="hljs-comment">// Add any other messages including your own custom messages.</span>
+  ],
+  <span class="hljs-attr">&quot;typePrefix&quot;</span>: <span class="hljs-string">&quot;IRosType&quot;</span>
+}
+</code></pre>
+				<ul>
+					<li>Run <code>npx ros-typescript-generator --config ros-ts-generator-config.json</code></li>
+					<li>Done!</li>
+				</ul>
+				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+					<h3>Examples</h3>
+				</a>
+				<ul>
+					<li><a href="./examples/basic">Basic Example</a></li>
+					<li><a href="./examples/real-ros1">Real ROS1 Example</a></li>
+					<li><a href="./examples/real-ros2">Real ROS2 Example</a></li>
+				</ul>
+				<a href="#credit" id="credit" style="color: inherit; text-decoration: none;">
+					<h3>Credit</h3>
+				</a>
+				<p>Credit goes to <a href="https://github.com/foxglove">foxglove</a> for their <a href="https://github.com/foxglove/rosmsg">foxglove/rosmsg</a> library.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#iconfig" class="tsd-kind-icon">IConfig</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#iconfigdirectory" class="tsd-kind-icon">IConfig<wbr>Directory</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#supported_ros_versions" class="tsd-kind-icon">SUPPORTED_<wbr>ROS_<wbr>VERSIONS</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#generatefromrosmsg" class="tsd-kind-icon">generate<wbr>From<wbr>Ros<wbr>Msg</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getmsgfiles" class="tsd-kind-icon">get<wbr>Msg<wbr>Files</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getmsgfilesdata" class="tsd-kind-icon">get<wbr>Msg<wbr>Files<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rosnametotypename" class="tsd-kind-icon">ros<wbr>Name<wbr>ToType<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rostypescriptgenerator" class="tsd-kind-icon">ros<wbr>Typescript<wbr>Generator</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#common" class="tsd-kind-icon">common</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#primitives1" class="tsd-kind-icon">primitives1</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#primitives2" class="tsd-kind-icon">primitives2</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
