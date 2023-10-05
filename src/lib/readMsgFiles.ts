@@ -1,4 +1,5 @@
-import { readdir, readFile } from 'fs/promises';
+import { readdirSync } from 'fs';
+import { readFile } from 'fs/promises';
 import { join } from 'path';
 import { basename } from 'path';
 
@@ -6,7 +7,7 @@ import { basename } from 'path';
 
 export const getMsgFiles = async (dir: string): Promise<string[]> => {
   let output: string[] = [];
-  for (const entry of await readdir(dir, { withFileTypes: true })) {
+  for (const entry of await readdirSync(dir, { withFileTypes: true })) {
     if (entry.isDirectory()) {
       output = output.concat(await getMsgFiles(join(dir, entry.name)));
     } else if (entry.isFile() && entry.name.endsWith('.msg')) {
